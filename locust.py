@@ -7,14 +7,18 @@ class QuickstartUser(HttpUser):
     def hello_world(self):
         self.client.get("/")
 
-    @task(3)  # Этот endpoint будет вызываться в 3 раза чаще
+    @task(1)
     def slow_endpoint(self):
         self.client.get("/slow_endpoint")
 
-    @task(2)
-    def database_endpoint(self):
-        self.client.get("/database_endpoint")
+    @task(1)
+    def slow_endpoint_fixed(self):
+        self.client.get('/slow_endpoint_fixed')
 
     @task(1)
     def high_cpu_endpoint(self):
         self.client.get("/high_cpu_endpoint")
+
+    @task(1)
+    def high_cpu_endpoint_fixed(self):
+        self.client.get('/high_cpu_endpoint_fixed')
