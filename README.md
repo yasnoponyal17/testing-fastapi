@@ -1,5 +1,4 @@
 # Лабораторная работа. Нагрузочное тестирование.
-В разработке...
 ## Постановка задачи
 1. Воспроизвести показанное на занятии и прокомментировать ситуацию с
 high_cpu_endpoint_fixed и high_cpu_endpoint, slow_endpoint, slow_endpoint_fixed
@@ -65,3 +64,7 @@ async def high_cpu_endpoint_fixed():
 ![fastapi](/images/fastapi.png)
 #### high_cpu_endpoint_fixed и slow_endpoint_fixed
 ![fastapi-fixed](/images/fastapi-fixed.png)
+#### flask
+![flask](/images/flask.png)
+#### sanic
+![sanic](/images/sanic.png)
